@@ -18,3 +18,45 @@ typescript-react-redux with parcel
 ```shell
 > yarn global add parcel-bundler
 ```
+
+## react 설치
+
+```shell
+> yarn add react react-dom @types/react @types/react-dom
+```
+
+## typescript 설정
+
+```shell
+> touch tsconfig.json
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "target": "es5",
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "~*": ["./*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
+```
+
+## 프로젝트 폴더구조
+
+```shell
+> mkdir src
+> mkdir src/components
+> mkdir src/routes
+> touch index.html
+> touch index.tsx
+> touch src/components/App.tsx
+> touch src/routes/Home.tsx
+> touch src/routes/Detail.tsx
+```

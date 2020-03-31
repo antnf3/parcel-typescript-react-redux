@@ -1,0 +1,20 @@
+{
+  "name": "parcel-typescript-react-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/antnf3/parcel-typescript-react-redux.git",
+  "author": "antnf3 <antnf3@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html --target browser --port 3000 --open"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.29",
+    "@types/react-dom": "^16.9.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
