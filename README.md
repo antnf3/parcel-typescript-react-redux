@@ -78,6 +78,6 @@ typescript-react-redux with parcel
 ```
 
 [✔] 1. createAction
-[] 2. createReducer
+[✔] 2. createReducer
 [✔] 3. configureStore
 [] 4. createSlice
