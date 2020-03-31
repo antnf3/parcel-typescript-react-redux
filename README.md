@@ -63,3 +63,10 @@ typescript-react-redux with parcel
 > touch src/routes/Home.tsx
 > touch src/routes/Detail.tsx
 ```
+
+## 추가 패키지 설치
+
+```shell
+> yarn add react-router-dom @types/react-router-dom
+> yarn add redux react-redux @types/react-redux
+```
