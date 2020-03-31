@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import { createAction } from "@reduxjs/toolkit";
+import { createAction, configureStore } from "@reduxjs/toolkit";
 
 export const ADD = "ADD";
 export const DELETE = "DELETE";
@@ -33,7 +33,8 @@ const reducer = (state = initialTodoState, action: todoStateAction) => {
       return state;
   }
 };
-const store = createStore(reducer);
+// const store = createStore(reducer);
 
+const store = configureStore({ reducer });
 export { addToDo, deleteToDo };
 export default store;

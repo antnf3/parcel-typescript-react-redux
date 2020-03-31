@@ -70,3 +70,14 @@ typescript-react-redux with parcel
 > yarn add react-router-dom @types/react-router-dom
 > yarn add redux react-redux @types/react-redux
 ```
+
+## Redux-Toolkit
+
+```shell
+> yarn add @reduxjs/toolkit
+```
+
+[✔] 1. createAction
+[] 2. createReducer
+[✔] 3. configureStore
+[] 4. createSlice
