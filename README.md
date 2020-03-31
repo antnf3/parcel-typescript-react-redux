@@ -29,7 +29,9 @@ typescript-react-redux with parcel
 
 ```shell
 > touch tsconfig.json
+```
 
+```json
 {
   "compilerOptions": {
     "module": "commonjs",
@@ -44,7 +46,8 @@ typescript-react-redux with parcel
       "~*": ["./*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }
 ```
 
