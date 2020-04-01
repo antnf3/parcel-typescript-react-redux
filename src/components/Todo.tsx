@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { TodoState, DELETE, deleteToDo } from "~store";
+import { TodoState, DELETE, remove } from "~store";
 import { RouteComponentProps } from "react-router-dom";
 
 interface TodoProps extends RouteComponentProps<any> {
@@ -20,7 +20,7 @@ function Todo({ text, id, onBtnClick }: TodoProps) {
 
 function mapDispatchToProps(dispatch: any, ownProps: any) {
   return {
-    onBtnClick: () => dispatch(deleteToDo(ownProps.id))
+    onBtnClick: () => dispatch(remove(ownProps.id))
   };
 }
 

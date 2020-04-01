@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { connect } from "react-redux";
 import { RouteComponentProps } from "react-router-dom";
-import { ADD, TodoState, addToDo } from "~store";
+import { ADD, TodoState, add } from "~store";
 import Todo from "~components/Todo";
 
 interface HomeProps extends RouteComponentProps<any> {
@@ -43,7 +43,7 @@ function mapStateToProps(state: TodoState[]) {
 }
 function mapDispatchToProps(dispatch: any) {
   return {
-    addTodo: (text: string) => dispatch(addToDo(text))
+    addTodo: (text: string) => dispatch(add(text))
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
